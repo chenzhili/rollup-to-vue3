@@ -1,0 +1,9 @@
+*.js
+*.png
+*.eot
+*.ttf
+*.woff
+
+/dist/
+/lib/
+/example/
