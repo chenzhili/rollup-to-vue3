@@ -160,6 +160,15 @@ yarn add -D eslint @babel/eslint-parser
     }
   }
 ```
+经验证在 package 的 json 中写 不起作用，另外添加了文件 .huskyrc.json
+```json
+  {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  }
+```
 
 ### 添加 lint-staged 对应 不同 文件修改，需要执行的 检测工具(可以单独配置)
 ```json
@@ -172,6 +181,17 @@ yarn add -D eslint @babel/eslint-parser
     ]
   }
 
+```
+经验证在 package 的 json 中写 不起作用，另外添加了文件 .lintstagedrc.json
+```json
+  {
+    "src/**/*.{js,vue}": [
+      "npm run lint"
+    ],
+    "src/**/*.{html,vue,css,less,scss,styl}": [
+      "npm run stylelint"
+    ]
+  }
 ```
 
 ## 添加 git commit 的 提交 描述的 统一性，就是约定行 提交规范；
