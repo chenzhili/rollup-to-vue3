@@ -141,6 +141,9 @@ yarn add moment
 ## 完善 eslint 需要的 插件
 // eslint
 // @babel/eslint-parser --- 在 babel 配置的，可以运用新的特性
+<!-- 让 vscode 识别 vue 文件等 相关 内容，setting.json 中 添加：
+  "eslint.validate": ["vue"]
+ -->
 需要在 .eslintrc 中 配置 @babel/eslint-parser
 yarn add -D eslint @babel/eslint-parser
 

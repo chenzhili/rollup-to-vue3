@@ -1,16 +1,18 @@
 <template>
   <div class="test">
-    <div class="d-test">sdfsdfsfsdf {{test}} {{testTime}}</div>
+    <div class="d-test">
+      sdfsdfsfsdf {{ test }} {{ testTime }}
+    </div>
     <img
       :src="testImg"
       alt="加载失败"
-    />
+    >
     <!-- <Button>tets</Button> -->
     <el-button>tets</el-button>
     <i
       class="iconfont"
       :class="iconWuliubaifang"
-    >{{iconWuliubaifang}}</i>
+    >{{ iconWuliubaifang }}</i>
   </div>
 </template>
 <script>

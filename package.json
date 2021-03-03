@@ -11,7 +11,9 @@
     "serve": "vue-cli-service serve --copy",
     "serve:build": "vue-cli-service build",
     "build:test": "node rollup-config/configDir.js && cross-env NODE_ENV=test rollup -c rollup.config.js",
-    "dev": "rollup -c rollup.config.js -w"
+    "dev": "rollup -c rollup.config.js -w",
+    "lint": "eslint  --ext .js,.vue src",
+    "styleLint": "stylelint --aei src"
   },
   "husky": {
     "hooks": {
@@ -21,10 +23,10 @@
   },
   "lint-staged": {
     "src/**/*.{js,vue}": [
-      "eslint --fix"
+      "npm run lint"
     ],
     "src/**/*.{html,vue,css,less,scss,styl}": [
-      "stylelint --fix"
+      "npm run stylelint"
     ]
   },
   "eslintIgnore": [
@@ -33,7 +35,11 @@
     "rollup.config.js",
     ".eslintrc.js",
     "vue.config.js",
-    "node_modules/**"
+    "node_modules/**",
+    "stylelint.config.js",
+    "commitlint.config.js",
+    "rollup-config/**",
+    "example/**"
   ],
   "devDependencies": {
     "@babel/core": "^7.12.10",
