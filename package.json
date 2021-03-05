@@ -91,7 +91,8 @@
     "url-loader": "^4.1.1",
     "vue": "^3.0.5"
   },
-  "dependencies": {
-    "element-plus": "^1.0.2-beta.32"
+  "dependencies": {},
+  "peerDependencies": {
+    "element-plus": "^1.0.2-beta.33"
   }
 }

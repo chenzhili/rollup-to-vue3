@@ -2216,9 +2216,9 @@
   integrity sha1-t0D2hgnfroqnHDpsqxXYFkB7pJM=
 
 "@popperjs/core@^2.4.4":
-  version "2.8.2"
-  resolved "https://registry.npm.taobao.org/@popperjs/core/download/@popperjs/core-2.8.2.tgz#1fd24b99e417176566f8ada718fd16dbc7ef2b7a"
-  integrity sha1-H9JLmeQXF2Vm+K2nGP0W28fvK3o=
+  version "2.9.0"
+  resolved "https://registry.npm.taobao.org/@popperjs/core/download/@popperjs/core-2.9.0.tgz#32e63212293dd3efbb521cd35a5020ab66eaa546"
+  integrity sha1-MuYyEik90++7UhzTWlAgq2bqpUY=
 
 "@protobufjs/aspromise@^1.1.1", "@protobufjs/aspromise@^1.1.2":
   version "1.1.2"
@@ -4041,7 +4041,7 @@ async-retry@^1.2.1:
 
 async-validator@^3.4.0:
   version "3.5.1"
-  resolved "https://registry.npm.taobao.org/async-validator/download/async-validator-3.5.1.tgz#cd62b9688b2465f48420e27adb47760ab1b5559f"
+  resolved "https://registry.npm.taobao.org/async-validator/download/async-validator-3.5.1.tgz?cache=0&sync_timestamp=1605751798748&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fasync-validator%2Fdownload%2Fasync-validator-3.5.1.tgz#cd62b9688b2465f48420e27adb47760ab1b5559f"
   integrity sha1-zWK5aIskZfSEIOJ620d2CrG1VZ8=
 
 async@^2.6.2:
@@ -6419,10 +6419,10 @@ elegant-spinner@^1.0.1:
   resolved "https://registry.npm.taobao.org/elegant-spinner/download/elegant-spinner-1.0.1.tgz#db043521c95d7e303fd8f345bedc3349cfb0729e"
   integrity sha1-2wQ1IcldfjA/2PNFvtwzSc+wcp4=
 
-element-plus@^1.0.2-beta.32:
-  version "1.0.2-beta.32"
-  resolved "https://registry.npm.taobao.org/element-plus/download/element-plus-1.0.2-beta.32.tgz#228975cfc2255993ef7ccd90238cea9a707f0742"
-  integrity sha1-Iol1z8IlWZPvfM2QI4zqmnB/B0I=
+element-plus@^1.0.2-beta.33:
+  version "1.0.2-beta.33"
+  resolved "https://registry.npm.taobao.org/element-plus/download/element-plus-1.0.2-beta.33.tgz#0e924c8872dbc14e916ed5d6452d9799b04d4c60"
+  integrity sha1-DpJMiHLbwU6RbtXWRS2XmbBNTGA=
   dependencies:
     "@popperjs/core" "^2.4.4"
     async-validator "^3.4.0"
