@@ -213,4 +213,7 @@ yarn add -D stylelint stylelint-config-standard stylelint-order
 .stylelintignore 文件 --- 忽略文件
 stylelint.config.js 文件 --- 动态配置文件
 
+# 20210308 对于 husky 起作用的问题
+如果 husky 不起作用，最主要是 .git/hooks 没有 对应的 husky 的 bin 脚本
+
 

@@ -4,9 +4,6 @@ module.exports = {
     es6: true,
     node: true,
   },
-  parserOptions: {
-    parser: "@babel/eslint-parser",
-  },
   extends: ['plugin:vue/essential', 'plugin:vue/recommended'],
   globals: {
     Atomics: 'readonly',
@@ -14,6 +11,7 @@ module.exports = {
     ENV: true,
   },
   parserOptions: {
+    parser: "@babel/eslint-parser",
     ecmaVersion: 2018,
     sourceType: 'module',
   },
