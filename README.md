@@ -216,4 +216,12 @@ stylelint.config.js 文件 --- 动态配置文件
 # 20210308 对于 husky 起作用的问题
 如果 husky 不起作用，最主要是 .git/hooks 没有 对应的 husky 的 bin 脚本
 
+# 20210421 对于 在 node 中不支持 import 写法的情况的补充
+```js
+// const dynamicImportVars = require('@rollup/plugin-dynamic-const-vars'); // 写法不支持 commonjs 模块
+import dynamicImportVars from '@rollup/plugin-dynamic-import-vars'
+// 会报错
+/* 引入 @babel/node 来 用 npx babel-node 来 兼容 */
+yarn add -D @babel/node
 
+```

@@ -15,6 +15,7 @@ const cssnano = require('cssnano')
 const cssnext = require('postcss-cssnext')
 const url = require('@rollup/plugin-url')
 // const dynamicImportVars = require('@rollup/plugin-dynamic-const-vars'); // 写法不支持 commonjs 模块
+import dynamicImportVars from '@rollup/plugin-dynamic-import-vars'
 const { terser } = require('rollup-plugin-terser')
 const font = require('rollup-plugin-font')
 
@@ -68,8 +69,8 @@ const genPlugins = (min) => {
       babelHelpers: 'runtime',
       extensions: ['.vue' /* ,'.js' // 不能引入 */], // 必须
     }),
-
-    // dynamicImportVars(),
+    // 支持 动态 加入 模块
+    dynamicImportVars(),
     // @rollup/plugin-url --- 替换所有的 文件 相关的 操作
     url({
       destDir: path.resolve(__dirname, '../lib/assets'),
